@@ -40,6 +40,7 @@ SHA-2 se utiliza en un gran número de herramientas de seguridad y protocolos. A
 * S/MIME
 * IPsec
 * Bitcoin.
+
 En el protocolo Bitcoin, SHA-256 se utiliza en la creación de claves o direcciones públicas y en la minería de Bitcoin.
 
 
@@ -69,7 +70,7 @@ Si hacemos un input de password con código malintencionado tipo:
 String password = "dummydata OR 0=0;";
 ```
 La consulta nos devolverá todos los elementos de la tabla Login (username, password) de todos los registros.
-Para evitar esto se emplean los PreparedStatement en JDBC.
+Para evitar esto se emplean los `PreparedStatement` en `JDBC`.
 
 ```java
 Connection con = (acquire Connection) //Conexión del pool de conexiones.
